@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        .container{
+            margin: auto;
+            width: 350px;
+            /* background: #8a8787; */
+            border-radius: 3px;
+            box-shadow: 6px 8px 8px 0px #bbaaaa;;
+        }
+        .row{
+            width: 98%;
+            padding: 4px;
+            display: flex;
+        }
+        .col-1{
+            width: 34%;
+            margin: auto;
+        }
+        .col-2{
+            width: 68%;
+        }
+        .btn-group{
+            margin-top: 10px;
+            padding: 3px;
+            text-align: center;
+        }
+        .btn{
+            border-radius: 2px;
+        }
+        input{
+            border: 1px solid lightskyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="" method="">
+            <div class="row">
+                <label class="col-1" for="username">UserName:</label>
+                <input class="col-2" type="text">
+            </div>
+
+            <div class="row">
+                <label class="col-1" for="username">Password:</label>
+                <input class="col-2" type="text">
+            </div>
+
+            <div class="row">
+                <label class="col-1" for="username">City of Employement:</label>
+                <input class="col-2" type="text">
+            </div>
+
+            <div class="row">
+                <label class="col-1" for="username">Webserver:</label>
+                <select class="col-2">
+                    <option>--Choose a Server--</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <label class="col-1" for="role">please specify your role:</label>
+                <div class="col-2">
+                    <input type="radio" value="Admin">
+                    <label> Admin</label><br>
+                    <input type="radio" value="Enginer">
+                    <label> Enginer</label><br>
+                    <input type="radio" value="Manager">
+                    <label> Manager</label><br>
+                    <input type="radio" value="Gust">
+                    <label> Gust</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <label class="col-1" for="sign">Single sign-on to following:</label>
+                <div class="col-2">
+                    <input type="checkbox" value="Payrole">
+                    <label>Payrole</label><br>
+                    <input type="checkbox" value="Mail">
+                    <label>Mail</label><br>
+                    <input type="checkbox" value="Self-service">
+                    <label>Self-service</label>
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <input type="button" value="Submit">
+                <input type="button" value="Reset">
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
